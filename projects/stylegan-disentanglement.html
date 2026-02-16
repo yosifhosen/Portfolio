@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Face Identity Disentanglement (StyleGAN) | Yosif Housen</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+
+<header class="hero">
+  <h1>Face Identity Disentanglement using StyleGAN</h1>
+  <p class="subtitle">
+    A machine learning project focused on disentangling facial identity from attributes (pose, expression, illumination)
+    using latent space mapping with StyleGAN.
+  </p>
+
+  <nav class="links">
+    <a href="../index.html">Home</a>
+    <a href="../contact.html">Contact</a>
+    <a href="https://github.com/yosifhousen" target="_blank" rel="noreferrer">GitHub</a>
+    <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+  </nav>
+</header>
+
+<main class="page">
+
+  <!-- HERO IMAGE -->
+  <section class="section text-center">
+    <img class="hero-img" src="../assets/img/stylegan-hero.png" alt="Identity/attribute swapping result grid" />
+    <p class="caption">Identity vs Attributes swapping results (example)</p>
+  </section>
+
+  <!-- PROJECT OVERVIEW -->
+  <section class="section text-center">
+    <h2>Project Overview</h2>
+    <ul class="list-clean center">
+      <li><strong>Field:</strong> Machine Learning / Computer Vision</li>
+      <li><strong>Model:</strong> StyleGAN</li>
+      <li><strong>Focus:</strong> Latent space manipulation & identity/attribute separation</li>
+      <li><strong>Output:</strong> Reconstructed faces combining identity from one image and attributes from another</li>
+      <li><strong>Year:</strong> 2024</li>
+    </ul>
+  </section>
+
+  <!-- WHAT I DID -->
+  <section class="section text-center">
+    <h2>What I Did</h2>
+    <ul class="list-clean center">
+      <li>Studied and implemented latent space mapping for identity/attribute disentanglement</li>
+      <li>Worked with StyleGAN architecture and the W latent space</li>
+      <li>Designed the training pipeline using generated samples</li>
+      <li>Analyzed reconstruction quality and disentanglement behavior</li>
+      <li>Collaborated on experiments, evaluation, and presentation of results</li>
+    </ul>
+  </section>
+
+  <!-- TECH HIGHLIGHTS -->
+  <section class="section text-center">
+    <h2>Technical Highlights</h2>
+    <ul class="list-clean center">
+      <li>GANs / StyleGAN architecture</li>
+      <li>Latent space (W) manipulation</li>
+      <li>Discriminator training for latent validation</li>
+      <li>Reconstruction and comparison experiments</li>
+      <li>ML pipeline design and evaluation</li>
+    </ul>
+  </section>
+
+  <!-- GALLERY (DIAGRAMS) -->
+  <section class="section text-center">
+    <h2>Diagrams & Visuals</h2>
+    <div class="gallery">
+      <img src="../assets/img/stylegan-1.png" alt="Architecture diagram" />
+      <img src="../assets/img/stylegan-2.png" alt="StyleGAN diagram" />
+    </div>
+    <p class="caption">Model / pipeline diagrams</p>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>© <span id="y"></span> Yosif Housen</p>
+</footer>
+
+<script>
+  document.getElementById("y").textContent = new Date().getFullYear();
+</script>
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox" aria-hidden="true">
+  <button class="lightbox-close" type="button" aria-label="Close (Esc)">×</button>
+  <img id="lightbox-img" alt="" />
+</div>
+
+<script src="../assets/js/lightbox.js"></script>
+
+</body>
+</html>

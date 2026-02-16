@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MultiCurrency HD Crypto Wallet | Yosif Housen</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+
+  <header class="hero">
+    <h1>MultiCurrency HD Crypto Wallet</h1>
+    <p class="subtitle">
+      A web-based hierarchical deterministic (HD) wallet supporting multiple cryptocurrencies.
+      Create/restore wallets, manage accounts, view balances, and send signed transactions via blockchain node APIs.
+    </p>
+
+    <nav class="links">
+      <a href="../index.html">Home</a>
+      <a href="../contact.html">Contact</a>
+      <a href="https://github.com/yosifhousen" target="_blank" rel="noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <!-- HERO IMAGE -->
+    <section class="section">
+      <img class="hero-img" src="../assets/img/wallet-hero.png" alt="MultiCurrency HD Wallet hero" />
+      <p class="caption">Project cover</p>
+    </section>
+
+    <!-- PROJECT OVERVIEW -->
+    <section class="section text-center">
+      <h2>Project Overview</h2>
+      <ul class="list-clean center">
+        <li><strong>Type:</strong> Web Application</li>
+        <li><strong>Tech:</strong> HTML, JavaScript</li>
+        <li><strong>APIs:</strong> Blockchain shared nodes (e.g., NowNodes)</li>
+        <li><strong>Coins:</strong> Ethereum, Tether (ERC-20)</li>
+        <li><strong>Year:</strong> 2023</li>
+      </ul>
+    </section>
+
+    <!-- ABSTRACT -->
+    <section class="section text-center">
+      <h2>Abstract</h2>
+      <p>
+        This project implements a multi-currency HD wallet where users can create or restore a wallet using a seed phrase,
+        generate accounts/addresses deterministically, fetch balances from blockchain node APIs, and send signed transactions.
+      </p>
+    </section>
+
+    <!-- WHAT I DID -->
+    <section class="section text-center">
+      <h2>What I Did</h2>
+      <ul class="list-clean center">
+        <li>Implemented the wallet UI and core logic in JavaScript</li>
+        <li>Built create/restore flow using seed phrases and deterministic key derivation</li>
+        <li>Handled account/address generation and basic wallet state management</li>
+        <li>Integrated blockchain APIs to fetch balances and broadcast transactions</li>
+        <li>Implemented transaction signing and sending flow</li>
+      </ul>
+    </section>
+
+    <!-- TECHNICAL HIGHLIGHTS -->
+    <section class="section text-center">
+      <h2>Technical Highlights</h2>
+      <ul class="list-clean center">
+        <li>Hierarchical Deterministic (HD) wallet concepts</li>
+        <li>Public/private key generation and management</li>
+        <li>Transaction signing and broadcasting</li>
+        <li>REST API integration with blockchain nodes</li>
+        <li>Frontend state handling in JavaScript</li>
+      </ul>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="section text-center">
+      <h2>Gallery</h2>
+      <div class="gallery">
+        <img src="../assets/img/wallet-ui-1.png" alt="Wallet UI screenshot 1" />
+        <img src="../assets/img/wallet-ui-2.png" alt="Wallet UI screenshot 2" />
+      </div>
+      <p class="caption">Screenshots from the project</p>
+    </section>
+
+    <!-- LINKS -->
+    <section class="section text-center">
+      <h2>Links</h2>
+      <div class="buttons">
+        <!-- Replace with the real repo link if you have a specific one -->
+        <a class="btn" href="https://github.com/yosifhousen" target="_blank" rel="noreferrer">GitHub Repo</a>
+      </div>
+    </section>
+
+
+
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="y"></span> Yosif Housen</p>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox" aria-hidden="true">
+  <button class="lightbox-close" type="button" aria-label="Close (Esc)">×</button>
+  <img id="lightbox-img" alt="" />
+</div>
+
+<script src="../assets/js/lightbox.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gravity Shooter | Yosif Housen</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+
+  <header class="hero">
+    <h1>Gravity Shooter</h1>
+    <p class="subtitle">
+      2D multiplayer educational game that combines physics-based gameplay with a machine-learning powered training mode.
+    </p>
+
+    <nav class="links">
+      <a href="../index.html">Home</a>
+      <a href="../contact.html">Contact</a>
+      <a href="https://github.com/yosifhousen" target="_blank" rel="noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <!-- HERO IMAGE -->
+    <section class="section">
+      <img class="hero-img" src="../assets/img/gravity-hero.png" alt="Gravity Shooter gameplay screenshot" />
+      <p class="caption">Gameplay screenshot</p>
+    </section>
+
+    <!-- PROJECT OVERVIEW -->
+    <section class="section text-center">
+      <h2>Project Overview</h2>
+      <ul class="list-clean center">
+        <li><strong>Type:</strong> 2D Multiplayer Educational Game</li>
+        <li><strong>Engine:</strong> Unity</li>
+        <li><strong>Languages:</strong> C#, Python</li>
+        <li><strong>Tech:</strong> ML-Agents (PPO), AWS (EC2 + RDS MySQL), REST API, Netcode</li>
+        <li><strong>Role:</strong> Gameplay Programmer / Systems Developer</li>
+        <li><strong>Year:</strong> 2024–2025</li>
+      </ul>
+    </section>
+
+    <!-- ABSTRACT -->
+   <section class="section text-center">
+      <h2>Abstract</h2>
+      <p>
+        Gravity Shooter is an innovative 2D multiplayer game that blends fast-paced gameplay with interactive learning in physics.
+        Players navigate dynamic environments filled with obstacles while using gravity-based mechanics to aim, shoot, and solve challenges,
+        turning core physics concepts like trajectory, force, and gravity into hands-on gameplay.
+      </p>
+      <p>
+        The game includes a machine learning–powered training mode that analyzes the player’s position and target distance in real time and
+        provides smart aiming suggestions. Players can then jump into solo or multiplayer modes, where mechanics like manipulating opponents’
+        gravity add a strategic twist.
+      </p>
+    </section>
+
+    <!-- MY ROLE -->
+    <section class="section text-center">
+      <h2>My Role</h2>
+      <ul class="list-clean center">
+        <li>Implemented core gameplay systems in Unity (C#), including shooting, gravity, and physics mechanics</li>
+        <li>Built the ML-based training mode using Unity ML-Agents (PPO) for real-time aiming assistance</li>
+        <li>Integrated backend services for authentication and multiplayer features</li>
+        <li>Worked on debugging, performance optimization, and system design</li>
+      </ul>
+    </section>
+
+    <!-- KEY FEATURES -->
+    <section class="section text-center">
+      <h2>Key Features</h2>
+      <ul class="list-clean center">
+        <li>Physics-based shooting with gravity, force, and wind</li>
+        <li>ML-powered training mode with real-time aiming tips</li>
+        <li>Solo and multiplayer modes with gravity manipulation mechanics</li>
+        <li>Dynamic 2D maps with obstacles and targets</li>
+        <li>Educational focus on trajectory and physics concepts</li>
+      </ul>
+    </section>
+
+    <!-- TECHNICAL HIGHLIGHTS -->
+    <section class="section text-center">
+      <h2>Technical Highlights</h2>
+      <ul class="list-clean center">
+        <li>Unity (C#) for gameplay, UI, and physics systems</li>
+        <li>Unity ML-Agents (PPO) for training the aiming assistant model</li>
+        <li>Python environment for ML training</li>
+        <li>AWS (EC2 + RDS MySQL) for authentication backend</li>
+        <li>REST API for client-server communication</li>
+        <li>Netcode for multiplayer synchronization and authority management</li>
+      </ul>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="section text-center">
+      <h2>Gallery</h2>
+      <div class="gallery">
+        <img src="../assets/img/gravity-1.png" alt="Lobby screen" />
+        <img src="../assets/img/gravity-2.png" alt="Login screen" />
+        <img src="../assets/img/gravity-3.png" alt="Training mode" />
+        <img src="../assets/img/gravity-4.png" alt="Multiplayer gameplay" />
+	<img src="../assets/img/gravity-5.png" alt="Ability popup" />
+	<img src="../assets/img/gravity-6.png" alt="Singleplayer game" />
+      </div>
+      <p class="caption">Screenshots from the project</p>
+    </section>
+
+    <!-- VIDEO -->
+<section class="section text-center">
+  <h2>Training Demo</h2>
+  <div class="video">
+    <video controls>
+      <source src="../assets/video/gravity-training.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</section>
+
+
+    <!-- LINKS -->
+    <section class="section text-center">
+      <h2>Links</h2>
+      <div class="buttons">
+        <a class="btn" href="https://github.com/yosifhousen" target="_blank" rel="noreferrer">GitHub Repo</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="y"></span> Yosif Housen</p>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox" aria-hidden="true">
+  <button class="lightbox-close" type="button" aria-label="Close (Esc)">×</button>
+  <img id="lightbox-img" alt="" />
+</div>
+
+<script src="../assets/js/lightbox.js"></script>
+
+</body>
+</html>

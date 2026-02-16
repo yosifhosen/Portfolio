@@ -1,0 +1,261 @@
+:root {
+  --max: 980px;
+  --text: #111;
+  --muted: #666;
+  --border: #e6e6e6;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: var(--text);
+  background: #fff;
+}
+
+.hero {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 64px 20px 28px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 52px;
+  margin: 0 0 10px;
+}
+
+.subtitle {
+  margin: 0 auto 10px;
+  max-width: 780px;
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.tags {
+  margin: 0 0 18px;
+  color: var(--muted);
+}
+
+.links a {
+  margin: 0 10px;
+  color: var(--text);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+.links a:hover { border-bottom-color: var(--text); }
+
+.grid {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 26px 20px 80px;
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0,0,0,.08);
+}
+
+.card img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  display: block;
+}
+
+.card-text {
+  padding: 14px 14px 16px;
+}
+.card-text h2 {
+  margin: 0 0 6px;
+  font-size: 18px;
+}
+.card-text p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.footer {
+  border-top: 1px solid var(--border);
+  padding: 24px 20px;
+  text-align: center;
+  color: var(--muted);
+}
+.page{
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 20px 80px;
+}
+
+.section{
+  margin: 28px 0 34px;
+}
+
+.section h2{
+  margin: 0 0 12px;
+  font-size: 22px;
+}
+
+.hero-img{
+  width: 100%;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  display: block;
+}
+
+.caption{
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: 14px;
+  text-align: center;
+}
+
+.facts{
+  margin: 0;
+  padding-left: 18px;
+  line-height: 1.7;
+}
+
+.bullets{
+  margin: 0;
+  padding-left: 18px;
+  line-height: 1.7;
+}
+
+.gallery{
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.gallery img{
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  display: block;
+}
+
+.video{
+  position: relative;
+  padding-top: 56.25%; /* 16:9 */
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.video iframe{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.buttons{
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.btn{
+  display: inline-block;
+  padding: 10px 14px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  text-decoration: none;
+  color: var(--text);
+}
+
+.btn:hover{
+  box-shadow: 0 8px 24px rgba(0,0,0,.08);
+  transform: translateY(-1px);
+}
+.video video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.center { text-align: center; }
+.center-list { list-style: none; padding-left: 0; margin: 0; }
+.center-list li { margin: 6px 0; }
+
+.hero-logo{
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.boxed{
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 18px;
+  background: rgba(0,0,0,0.02);
+}
+
+.gallery.five{
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+/* Clean list (no bullets) - use everywhere */
+.list-clean{
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+.list-clean li{
+  margin: 8px 0;
+}
+
+/* Optional: centered version (like Zerli highlights) */
+.list-clean.center{
+  text-align: center;
+}
+.text-center{
+  text-align: center;
+}
+/* Lightbox */
+.lightbox{
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: rgba(0,0,0,.75);
+  z-index: 9999;
+}
+
+.lightbox.open{ display: flex; }
+
+.lightbox img{
+  max-width: min(1100px, 96vw);
+  max-height: 90vh;
+  border-radius: 14px;
+  background: #fff;
+}
+
+.lightbox-close{
+  position: fixed;
+  top: 16px;
+  right: 18px;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 999px;
+  font-size: 28px;
+  line-height: 44px;
+  cursor: pointer;
+}
+

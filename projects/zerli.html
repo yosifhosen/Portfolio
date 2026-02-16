@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Zerli – Client-Server Shop Application | Yosif Housen</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+
+<header class="hero">
+  <h1>Zerli – Client-Server Shop Application</h1>
+  <p class="subtitle">
+    A full-stack client-server desktop application built with Java (JavaFX UI + OCSF networking + MySQL database) that
+    allows customers to browse products, build orders, and shop managers to manage inventory and orders.
+  </p>
+
+  <nav class="links">
+    <a href="../index.html">Home</a>
+    <a href="../contact.html">Contact</a>
+    <a href="https://github.com/yosifhousen/Zerli" target="_blank" rel="noreferrer">GitHub Repo</a>
+    <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+  </nav>
+</header>
+
+<main class="page">
+
+  <!-- HERO LOGO (big centered like Adobe) -->
+  <section class="section text-center">
+    <img class="hero-img hero-logo" src="../assets/img/zerli-hero.png" alt="Zerli logo" />
+    <p class="caption">Zerli – House of Flowers</p>
+  </section>
+
+  <!-- PROJECT OVERVIEW (centered list like your screenshot) -->
+  <section class="section text-center">
+    <h2>Project Overview</h2>
+    <ul class="list-clean center">
+      <li><strong>Tech:</strong> Java, JavaFX, MySQL, OCSF</li>
+      <li><strong>Type:</strong> Client-Server Desktop App</li>
+      <li><strong>Features:</strong> Login system, product catalog, order management, role-based views</li>
+      <li><strong>Year:</strong> 2023</li>
+    </ul>
+  </section>
+
+  <!-- MY ROLE (boxed area like Adobe) -->
+  <section class="section text-center">
+    <div class="boxed">
+      <h2>My Role</h2>
+      <ul class="list-clean center">
+        <li>Implemented database integration for reading and writing data between the application and MySQL</li>
+        <li>Developed UI components and interactive buttons using JavaFX</li>
+        <li>Implemented business logic behind UI actions (create, update, retrieve)</li>
+        <li>Built manager-side features including reports and management views</li>
+        <li>Worked on the client-server data flow and handling server responses</li>
+        <li>Improved usability and functionality of the management interface</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- TECHNICAL HIGHLIGHTS -->
+  <section class="section text-center">
+    <h2>Technical Highlights</h2>
+    <ul class="list-clean center">
+      <li>UI state management in JavaFX</li>
+      <li>Client-server pattern using OCSF</li>
+      <li>Persistent storage via MySQL</li>
+      <li>Networked request/response architecture</li>
+    </ul>
+  </section>
+
+  <!-- UI GALLERY (one row of screens like Adobe) -->
+ <section class="section text-center">
+    <h2>UI Screens</h2>
+    <div class="gallery five">
+      <img src="../assets/img/zerli-1.png" alt="Login screen" />
+      <img src="../assets/img/zerli-2.png" alt="Catalog screen" />
+      <img src="../assets/img/zerli-3.png" alt="Order screen" />
+      <img src="../assets/img/zerli-4.png" alt="Manager dashboard" />
+      <img src="../assets/img/zerli-5.png" alt="Orders table" />
+    </div>
+    <p class="caption">Sample screens from the application</p>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>© <span id="y"></span> Yosif Housen</p>
+</footer>
+
+<script>
+  document.getElementById("y").textContent = new Date().getFullYear();
+</script>
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox" aria-hidden="true">
+  <button class="lightbox-close" type="button" aria-label="Close (Esc)">×</button>
+  <img id="lightbox-img" alt="" />
+</div>
+
+<script src="../assets/js/lightbox.js"></script>
+
+</body>
+</html>
