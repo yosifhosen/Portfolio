@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Yosif Housen | Portfolio</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="hero">
+    <h1>Hi, I'm Yosif Housen!</h1>
+    <p class="subtitle">
+      Junior Software Developer with experience in C#, Java, Python, and SQL.
+      I build real-world systems, games, and AI-powered projects.
+    </p>
+    <p class="tags">💻 Software Engineering • 🎮 Game Development • 🧠 Machine Learning</p>
+    <nav class="links">
+      <a href="contact.html">Contact</a>
+      <a href="https://github.com/yosifhousen" target="_blank" rel="noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+    </nav>
+  </header>
+
+  <main class="grid">
+    <a class="card" href="projects/gravity-shooter.html">
+      <img src="assets/img/gravity-shooter-cover.png" alt="Gravity Shooter cover" />
+      <div class="card-text">
+        <h2>Gravity Shooter</h2>
+        <p>Unity • ML-Agents • Multiplayer</p>
+      </div>
+    </a>
+<a class="card" href="projects/stylegan-disentanglement.html">
+  <img src="assets/img/stylegan-cover.png" alt="StyleGAN project cover" />
+  <div class="card-text">
+    <h2>Face Identity Disentanglement (StyleGAN)</h2>
+    <p>Machine Learning • Computer Vision</p>
+  </div>
+</a>
+<a class="card" href="projects/dhsnet.html">
+  <img src="assets/img/dhsnet-cover.png" alt="DHSNet cover" />
+  <div class="card-text">
+    <h2>DHSNet – Salient Object Detection</h2>
+    <p>Machine Learning • Computer Vision</p>
+  </div>
+</a>
+<a class="card" href="projects/zerli.html">
+  <img src="assets/img/zerli-cover.png" alt="Zerli cover" />
+  <div class="card-text">
+    <h2>Zerli – Client-Server Shop Application</h2>
+    <p>Java • JavaFX • MySQL</p>
+  </div>
+</a>
+<a class="card" href="projects/wallet.html">
+  <img src="assets/img/wallet-hero.png" alt="MultiCurrency HD Crypto Wallet cover" />
+  <div class="card-text">
+    <h2>MultiCurrency HD Crypto Wallet</h2>
+    <p>HTML • JavaScript • Blockchain APIs</p>
+  </div>
+</a>
+
+
+
+
+
+    <!-- Add more cards like this -->
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="y"></span> Yosif Housen</p>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
